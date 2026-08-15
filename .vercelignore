@@ -1,0 +1,12 @@
+node_modules
+.git
+.gemini
+.vercel
+*.log
+*.mp4
+**/*.mp4
+assets/*.mp4
+assets/vid*
+assets/jaffna video*
+assets/jaffna video1_files
+assets/jaffna video2_files

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Sivakumar Dhanushka | Full-Stack Developer & IT Infrastructure Engineering</title>
+    <meta name="title" content="Sivakumar Dhanushka | Full-Stack Developer & IT Infrastructure Engineering">
+    <meta name="description"
+        content="Portfolio of Sivakumar Dhanushka - Full-Stack Developer (MERN) and IT Infrastructure / ERP Support Engineering. Explore projects, skills, certifications, and chat directly via WhatsApp.">
+    <meta name="keywords"
+        content="Sivakumar Dhanushka, Full-Stack Developer, MERN Stack, React, Node.js, IT Infrastructure, ERP Support, SAP, Portfolio, Sri Lanka">
+    <meta name="author" content="Sivakumar Dhanushka">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/sivakumardhanushka">
+    <meta property="og:title" content="Sivakumar Dhanushka | Full-Stack Developer & IT Infrastructure Engineering">
+    <meta property="og:description"
+        content="Explore my portfolio, 7+ full-stack and IT infrastructure projects, skills, and chat directly with me on WhatsApp.">
+    <meta property="og:image" content="assets/hero.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/hero.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Global Network Live Background -->
+    <div id="live-bg-container" class="live-bg-container">
+        <canvas id="bg"></canvas>
+        <canvas id="mesh"></canvas>
+        <canvas id="globe"></canvas>
+    </div>
+
+    <!-- Ambient Aurora Glow Orbs -->
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+    <div class="ambient-glow ambient-glow-3"></div>
+    <div class="ambient-glow ambient-glow-4"></div>
+
+    <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-badge">SD</div>
+                <span>S.<span class="gradient-text">Dhanushka</span></span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#timeline" class="nav-link">Experience & Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline btn-sm">
+                    <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                    <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+    <aside class="mobile-nav" id="mobile-nav">
+        <div>
+            <div class="mobile-nav-header">
+                <a href="#home" class="nav-logo">
+                    <div class="logo-badge">SD</div>
+                    <span>S.<span class="gradient-text">Dhanushka</span></span>
+                </a>
+                <button class="btn-icon" id="mobile-close" aria-label="Close navigation">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link active"><i data-lucide="home" style="width:20px;"></i>
+                        Home</a></li>
+                <li><a href="#about" class="mobile-nav-link"><i data-lucide="user" style="width:20px;"></i> About</a>
+                </li>
+                <li><a href="#skills" class="mobile-nav-link"><i data-lucide="code" style="width:20px;"></i> Skills</a>
+                </li>
+                <li><a href="#projects" class="mobile-nav-link"><i data-lucide="folder-git-2" style="width:20px;"></i>
+                        Projects</a></li>
+                <li><a href="#timeline" class="mobile-nav-link"><i data-lucide="graduation-cap" style="width:20px;"></i>
+                        Education & Certs</a></li>
+                <li><a href="#contact" class="mobile-nav-link"><i data-lucide="mail" style="width:20px;"></i>
+                        Contact</a></li>
+            </ul>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I%20visited%20your%20portfolio!" target="_blank"
+                rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
+                <i data-lucide="message-circle" style="width:18px;"></i>
+                <span>Direct WhatsApp</span>
+            </a>
+            <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">Sivakumardhanushk@gmail.com</p>
+        </div>
+    </aside>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-status-pill">
+                    <span class="status-dot"></span>
+                    <span>Available for Freelance & Full-Time Roles</span>
+                </div>
+
+                <div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Sivakumar Dhanushka</span>
+                    </h1>
+                    <div class="hero-role-wrapper">
+                        <span style="color:var(--text-secondary);">I am a</span>
+                        <span class="gradient-text-alt" id="typewriter-text"></span>
+                        <span class="typing-cursor"></span>
+                    </div>
+                </div>
+
+                <p class="hero-bio">
+                    Passionate <strong>Full-Stack MERN Developer</strong> and <strong>IT Infrastructure / ERP Support
+                        Engineering</strong>.
+                    I engineer resilient, high-performance web applications, architect robust IT networks, and
+                    streamline enterprise business systems.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I'm%20interested%20in%20discussing%20a%20project%20with%20you!"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="hero-whatsapp-btn">
+                        <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="layout-grid" style="width:18px;height:18px;"></i>
+                        <span>Explore Projects</span>
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        <i data-lucide="send" style="width:18px;height:18px;"></i>
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">20+</span>
+                        <span class="stat-label">Projects & Builds</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">HNDIT</span>
+                        <span class="stat-label">SLIATE Candidate</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">100%</span>
+                        <span class="stat-label">Commitment</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual Card with Dynamic GitHub DP -->
+            <div class="hero-visual">
+                <div class="avatar-card-container">
+                    <div class="avatar-halo"></div>
+
+                    <div class="avatar-card" id="hero-avatar-card">
+                        <div class="avatar-image-frame">
+                            <img id="user-dp-img" src="assets/hero.png"
+                                alt="Sivakumar Dhanushka - Full Stack Developer & IT Specialist">
+                        </div>
+                    </div>
+
+                    <!-- GitHub Profile Live Badge -->
+                    <div class="avatar-github-badge">
+                        <div class="github-user-info">
+                            <img src="assets/hero.png" alt="Sivakumar Dhanushka" class="github-avatar-thumb">
+                            <div>
+                                <span class="github-user-name">Sivakumar Dhanushka</span>
+                                <span class="github-user-handle">@sivakumardhanushka</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/sivakumardhanushka" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon" title="View GitHub Profile">
+                            <i data-lucide="github" style="width:18px;height:18px;"></i>
+                        </a>
+                    </div>
+
+                    <!-- Floating Technology Badges -->
+                    <div class="floating-pill pill-1">
+                        <i data-lucide="layers" style="width:16px;height:16px;"></i>
+                        <span>Full-Stack MERN</span>
+                    </div>
+
+                    <div class="floating-pill pill-2">
+                        <i data-lucide="server" style="width:16px;height:16px;"></i>
+                        <span>IT Infrastructure</span>
+                    </div>
+
+                    <div class="floating-pill pill-3">
+                        <i data-lucide="database" style="width:16px;height:16px;"></i>
+                        <span>ERP & SAP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT & DUAL SPECIALIZATION
+       ========================================================================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i data-lucide="user-check" style="width:14px;height:14px;"></i>
+                    About My Expertise
+                </span>
+                <h2 class="section-title">Dual Specialization in <span class="gradient-text">Software &
+                        Infrastructure</span></h2>
+                <p class="section-desc">
+                    Bridging the gap between scalable full-stack web applications and high-availability enterprise IT
+                    systems.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Specialization 1: Full-Stack -->
+                <div class="glass-card specialization-card">
+                    <div>
+                        <div class="spec-icon-wrapper spec-icon-dev">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3 class="spec-title">Full-Stack Web Engineering</h3>
+                        <p class="spec-desc">
+                            Crafting responsive, high-speed, dynamic web platforms using the modern MERN stack (MongoDB,
+                            Express, React, Node.js).
+                            Focused on clean component architecture, state management, RESTful APIs, secure
+                            authentication, and seamless user experiences.
+                        </p>
+                    </div>
+                    <div class="spec-tags">
+                        <span class="spec-tag">React.js</span>
+                        <span class="spec-tag">Node.js</span>
+                        <span class="spec-tag">Express</span>
+                        <span class="spec-tag">MongoDB</span>
+                        <span class="spec-tag">Redux</span>
+                        <span class="spec-tag">TailwindCSS</span>
+                        <span class="spec-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Specialization 2: IT Infrastructure & ERP -->
+                <div class="glass-card specialization-card">
+                    <div>
+                        <div class="spec-icon-wrapper spec-icon-infra">
+                            <i data-lucide="network"></i>
+                        </div>
+                        <h3 class="spec-title">IT Infrastructure & ERP/SAP Support</h3>
+                        <p class="spec-desc">
+                            Ensuring enterprise reliability through network engineering, Cisco CCNA routing and
+                            switching principles,
+                            Linux/Windows server management, database administration, and SAP ERP business software
+                            workflows (ABAP & Business AI Platform).
+                        </p>
+                    </div>
+                    <div class="spec-tags">
+                        <span class="spec-tag">Cisco Networking</span>
+                        <span class="spec-tag">Linux / Windows Server</span>
+                        <span class="spec-tag">SAP ABAP</span>
+                        <span class="spec-tag">SAP Business AI</span>
+                        <span class="spec-tag">MySQL / JDBC</span>
+                        <span class="spec-tag">System Security</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Strengths Row -->
+            <div class="highlights-row">
+                <div class="glass-card highlight-box">
+                    <div class="highlight-icon"><i data-lucide="zap"></i></div>
+                    <h4 class="highlight-title">Fast Performance</h4>
+                    <p class="highlight-sub">Optimized code & responsive layouts</p>
+                </div>
+                <div class="glass-card highlight-box">
+                    <div class="highlight-icon"><i data-lucide="shield-check"></i></div>
+                    <h4 class="highlight-title">Resilient Architecture</h4>
+                    <p class="highlight-sub">Secure databases & stable networks</p>
+                </div>
+                <div class="glass-card highlight-box">
+                    <div class="highlight-icon"><i data-lucide="briefcase"></i></div>
+                    <h4 class="highlight-title">Enterprise Ready</h4>
+                    <p class="highlight-sub">ERP, SAP & Project Management</p>
+                </div>
+                <div class="glass-card highlight-box">
+                    <div class="highlight-icon"><i data-lucide="message-square"></i></div>
+                    <h4 class="highlight-title">Client Oriented</h4>
+                    <p class="highlight-sub">Instant WhatsApp & email communication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SKILLS MATRIX SECTION
+       ========================================================================== -->
+    <section class="section" id="skills" style="background: rgba(13, 18, 31, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i data-lucide="cpu" style="width:14px;height:14px;"></i>
+                    Technical Proficiency
+                </span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <p class="section-desc">
+                    A comprehensive overview of my technical stack across software engineering, systems administration,
+                    and enterprise tools.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Category 1: Frontend -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-cat-icon" style="color:#38bdf8;">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-cat-title">Frontend Architecture</h3>
+                            <p class="skill-cat-subtitle">User Interfaces, Styling & Interactive UX</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:var(--accent-secondary);"></i> React.js & Hooks</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:var(--accent-secondary);"></i> JavaScript (ES6+) &
+                                    DOM</span>
+                                <span class="skill-pct">92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:var(--accent-secondary);"></i> HTML5 & Semantic
+                                    Web</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:var(--accent-secondary);"></i> CSS3, TailwindCSS &
+                                    Animations</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-tags-cloud">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">CSS Grid/Flex</span>
+                        <span class="tech-tag">Glassmorphism</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Backend & Databases -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-cat-icon" style="color:#34d399;">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-cat-title">Backend & Databases</h3>
+                            <p class="skill-cat-subtitle">APIs, Server Architecture & Data Storage</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#34d399;"></i> Node.js & Express.js</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 88%; background:linear-gradient(135deg, #10b981, #06b6d4);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#34d399;"></i> MongoDB & Mongoose ORM</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 85%; background:linear-gradient(135deg, #10b981, #06b6d4);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#34d399;"></i> RESTful API Design & Postman</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 90%; background:linear-gradient(135deg, #10b981, #06b6d4);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#34d399;"></i> MySQL, JDBC & SQL Queries</span>
+                                <span class="skill-pct">82%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 82%; background:linear-gradient(135deg, #10b981, #06b6d4);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-tags-cloud">
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Mongoose</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Stripe API</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: IT Infrastructure & Networking -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-cat-icon" style="color:#a855f7;">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-cat-title">IT Infrastructure & Systems</h3>
+                            <p class="skill-cat-subtitle">Cisco Networking, Servers & Security</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#a855f7;"></i> Cisco CCNA Networking & Routing</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 85%; background:linear-gradient(135deg, #a855f7, #6366f1);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#a855f7;"></i> Linux & Windows Server
+                                    Administration</span>
+                                <span class="skill-pct">84%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 84%; background:linear-gradient(135deg, #a855f7, #6366f1);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#a855f7;"></i> Network Troubleshooting &
+                                    Subnetting</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 88%; background:linear-gradient(135deg, #a855f7, #6366f1);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#a855f7;"></i> Virtualization & System
+                                    Diagnostics</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 80%; background:linear-gradient(135deg, #a855f7, #6366f1);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-tags-cloud">
+                        <span class="tech-tag">CCNA</span>
+                        <span class="tech-tag">TCP/IP</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Windows Server</span>
+                        <span class="tech-tag">DNS/DHCP</span>
+                        <span class="tech-tag">Packet Tracer</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: ERP, Tools & Project Management -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-card-header">
+                        <div class="skill-cat-icon" style="color:#f59e0b;">
+                            <i data-lucide="settings-2"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-cat-title">ERP, Tools & Management</h3>
+                            <p class="skill-cat-subtitle">SAP, Enterprise Workflows & Quality Assurance</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#f59e0b;"></i> SAP Business AI & ABAP
+                                    Fundamentals</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 80%; background:linear-gradient(135deg, #f59e0b, #ec4899);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#f59e0b;"></i> IT Project Management (ITPM) &
+                                    Agile</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 88%; background:linear-gradient(135deg, #f59e0b, #ec4899);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#f59e0b;"></i> Software Quality Assurance (SQA)</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 85%; background:linear-gradient(135deg, #f59e0b, #ec4899);"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i data-lucide="check-circle-2"
+                                        style="width:14px;color:#f59e0b;"></i> Git, GitHub & Team Version Control</span>
+                                <span class="skill-pct">92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"
+                                    style="width: 92%; background:linear-gradient(135deg, #f59e0b, #ec4899);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-tags-cloud">
+                        <span class="tech-tag">SAP ERP</span>
+                        <span class="tech-tag">ABAP</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">ITPM</span>
+                        <span class="tech-tag">Business Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       PROJECTS SECTION (GitHub Verified Projects Only)
+       ========================================================================== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i data-lucide="folder-git" style="width:14px;height:14px;"></i>
+                    GitHub Repositories & Builds
+                </span>
+                <h2 class="section-title">Public GitHub <span class="gradient-text">Projects</span></h2>
+                <p class="section-desc">
+                    Explore my active open-source repositories on GitHub — featuring full-stack MERN platforms,
+                    interactive web apps, enterprise Java systems, and desktop computing software.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="projects-filter-bar">
+                <button class="filter-btn active" data-filter="all">All GitHub Projects (5)</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack MERN</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="system">Enterprise & Desktop</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-container">
+
+                <!-- Project 1: YoYo MERN E-Commerce -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-thumb-wrapper">
+                        <span class="project-category-badge">Full-Stack MERN</span>
+                        <img src="assets/ecommerce-websites.jpg" alt="YoYo MERN E-Commerce" class="project-thumb">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <a href="https://github.com/sivakumardhanushka/Yoyo-Ecommerce" target="_blank"
+                                rel="noopener noreferrer" class="project-repo-link" title="Open GitHub Repository">
+                                <i data-lucide="github" style="width:13px;height:13px;"></i>
+                                <span>sivakumardhanushka/Yoyo-Ecommerce</span>
+                            </a>
+                        </div>
+                        <h3 class="project-title">YoYo - MERN E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A production-ready e-commerce platform built with React, Node.js, Express, and MongoDB.
+                            Features secure JWT authentication, shopping cart, order tracking, admin product inventory,
+                            and Stripe payment gateway.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-footer-actions">
+                            <button class="btn btn-outline btn-sm open-project-modal" data-project-id="yoyo">
+                                <i data-lucide="info" style="width:14px;"></i> Details
+                            </button>
+                            <div class="project-links">
+                                <a href="https://github.com/sivakumardhanushka/Yoyo-Ecommerce" target="_blank"
+                                    rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                                    <i data-lucide="github" style="width:18px;"></i>
+                                </a>
+                                <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I%20am%20interested%20in%20your%20YoYo%20MERN%20E-Commerce%20project!"
+                                    target="_blank" rel="noopener noreferrer" class="btn-icon" title="Chat on WhatsApp">
+                                    <i data-lucide="message-circle"
+                                        style="width:18px;color:var(--accent-whatsapp);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Dude Estates Luxury Real Estate -->
+                <div class="project-card" data-category="web">
+                    <div class="project-thumb-wrapper">
+                        <span class="project-category-badge">Web Application</span>
+                        <img src="assets/house - 07.jpg" alt="Dude Estates Real Estate" class="project-thumb">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <a href="https://github.com/sivakumardhanushka/Real-Estate-website" target="_blank"
+                                rel="noopener noreferrer" class="project-repo-link" title="Open GitHub Repository">
+                                <i data-lucide="github" style="width:13px;height:13px;"></i>
+                                <span>sivakumardhanushka/Real-Estate-website</span>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Dude Estates - Luxury Real Estate Portal</h3>
+                        <p class="project-description">
+                            Design-forward property showcase platform with dynamic search filters, interactive property
+                            cards, 3D hover effects, modal property specs, customer inquiry workflows, and payment
+                            integration.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">Modern CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-footer-actions">
+                            <button class="btn btn-outline btn-sm open-project-modal" data-project-id="realestate">
+                                <i data-lucide="info" style="width:14px;"></i> Details
+                            </button>
+                            <div class="project-links">
+                                <a href="https://github.com/sivakumardhanushka/Real-Estate-website" target="_blank"
+                                    rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                                    <i data-lucide="github" style="width:18px;"></i>
+                                </a>
+                                <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I'm%20impressed%20by%20the%20Real%20Estate%20website%20project!"
+                                    target="_blank" rel="noopener noreferrer" class="btn-icon" title="Chat on WhatsApp">
+                                    <i data-lucide="message-circle"
+                                        style="width:18px;color:var(--accent-whatsapp);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Tourism in Jaffna Cultural Portal -->
+                <div class="project-card" data-category="web">
+                    <div class="project-thumb-wrapper">
+                        <span class="project-category-badge">Web Application</span>
+                        <img src="assets/sa-rapita- 20.jpg" alt="Tourism in Jaffna" class="project-thumb">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <a href="https://github.com/sivakumardhanushka/Tourisum-in-Jaffna" target="_blank"
+                                rel="noopener noreferrer" class="project-repo-link" title="Open GitHub Repository">
+                                <i data-lucide="github" style="width:13px;height:13px;"></i>
+                                <span>sivakumardhanushka/Tourisum-in-Jaffna</span>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Tourism in Jaffna - Cultural Portal</h3>
+                        <p class="project-description">
+                            An immersive heritage and tourism website promoting historical attractions, cultural
+                            festivals, temples, and travel routes in the Northern Province of Sri Lanka with rich
+                            multimedia galleries.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Multimedia</span>
+                            <span class="tech-tag">Cultural Heritage</span>
+                        </div>
+                        <div class="project-footer-actions">
+                            <button class="btn btn-outline btn-sm open-project-modal" data-project-id="jaffna">
+                                <i data-lucide="info" style="width:14px;"></i> Details
+                            </button>
+                            <div class="project-links">
+                                <a href="https://github.com/sivakumardhanushka/Tourisum-in-Jaffna" target="_blank"
+                                    rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                                    <i data-lucide="github" style="width:18px;"></i>
+                                </a>
+                                <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I%20saw%20your%20Tourism%20in%20Jaffna%20website!"
+                                    target="_blank" rel="noopener noreferrer" class="btn-icon" title="Chat on WhatsApp">
+                                    <i data-lucide="message-circle"
+                                        style="width:18px;color:var(--accent-whatsapp);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Enterprise Employee Management System -->
+                <div class="project-card" data-category="system">
+                    <div class="project-thumb-wrapper">
+                        <span class="project-category-badge">Enterprise Java</span>
+                        <img src="assets/food-ecommerce.jpg" alt="Employee Management System" class="project-thumb">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <a href="https://github.com/sivakumardhanushka/Employe-Management-system" target="_blank"
+                                rel="noopener noreferrer" class="project-repo-link" title="Open GitHub Repository">
+                                <i data-lucide="github" style="width:13px;height:13px;"></i>
+                                <span>sivakumardhanushka/Employe-Management-system</span>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Enterprise Employee Management System</h3>
+                        <p class="project-description">
+                            Robust Java desktop enterprise application with MySQL database integration via JDBC. Manages
+                            staff onboarding, departmental structures, attendance records, role-based security, and
+                            automated salary reporting.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JDBC</span>
+                            <span class="tech-tag">Swing / UI</span>
+                            <span class="tech-tag">Enterprise RBAC</span>
+                        </div>
+                        <div class="project-footer-actions">
+                            <button class="btn btn-outline btn-sm open-project-modal" data-project-id="employee">
+                                <i data-lucide="info" style="width:14px;"></i> Details
+                            </button>
+                            <div class="project-links">
+                                <a href="https://github.com/sivakumardhanushka/Employe-Management-system"
+                                    target="_blank" rel="noopener noreferrer" class="btn-icon"
+                                    title="GitHub Repository">
+                                    <i data-lucide="github" style="width:18px;"></i>
+                                </a>
+                                <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I'd%20like%20to%20know%20more%20about%20your%20Java%20Employee%20Management%20System!"
+                                    target="_blank" rel="noopener noreferrer" class="btn-icon" title="Chat on WhatsApp">
+                                    <i data-lucide="message-circle"
+                                        style="width:18px;color:var(--accent-whatsapp);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Scientific Calculator Suite -->
+                <div class="project-card" data-category="system">
+                    <div class="project-thumb-wrapper">
+                        <span class="project-category-badge">Desktop Application</span>
+                        <img src="assets/architecture - 02.jpg" alt="Scientific Calculator" class="project-thumb">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <a href="https://github.com/sivakumardhanushka/Scientific-Calculator" target="_blank"
+                                rel="noopener noreferrer" class="project-repo-link" title="Open GitHub Repository">
+                                <i data-lucide="github" style="width:13px;height:13px;"></i>
+                                <span>sivakumardhanushka/Scientific-Calculator</span>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Advanced Scientific Calculator Suite</h3>
+                        <p class="project-description">
+                            High-precision mathematical calculation application built with C# .NET. Handles advanced
+                            trigonometry, logarithmic computation, exponential operations, memory registers, and custom
+                            formula evaluation.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">C# .NET</span>
+                            <span class="tech-tag">WinForms/WPF</span>
+                            <span class="tech-tag">Math Algorithms</span>
+                            <span class="tech-tag">Desktop Suite</span>
+                        </div>
+                        <div class="project-footer-actions">
+                            <button class="btn btn-outline btn-sm open-project-modal" data-project-id="calculator">
+                                <i data-lucide="info" style="width:14px;"></i> Details
+                            </button>
+                            <div class="project-links">
+                                <a href="https://github.com/sivakumardhanushka/Scientific-Calculator" target="_blank"
+                                    rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                                    <i data-lucide="github" style="width:18px;"></i>
+                                </a>
+                                <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20let's%20connect%20regarding%20your%20C%23%20Scientific%20Calculator%20project!"
+                                    target="_blank" rel="noopener noreferrer" class="btn-icon" title="Chat on WhatsApp">
+                                    <i data-lucide="message-circle"
+                                        style="width:18px;color:var(--accent-whatsapp);"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       EDUCATION & CERTIFICATIONS SECTION
+       ========================================================================== -->
+    <section class="section" id="timeline" style="background: rgba(13, 18, 31, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i data-lucide="award" style="width:14px;height:14px;"></i>
+                    Background & Credentials
+                </span>
+                <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+                <p class="section-desc">
+                    Formal academic foundations combined with industry-standard technological certifications.
+                </p>
+            </div>
+
+            <div class="timeline-grid">
+                <!-- Academic Education -->
+                <div>
+                    <h3 class="timeline-column-title">
+                        <i data-lucide="graduation-cap" style="color:var(--accent-primary);"></i>
+                        <span>Education</span>
+                    </h3>
+
+                    <div class="timeline-list">
+                        <!-- SLIATE HNDIT -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="glass-card timeline-card">
+                                <span class="timeline-period">2024 - PRESENT</span>
+                                <h4 class="timeline-title">Higher National Diploma in Information Technology (HNDIT)
+                                </h4>
+                                <p class="timeline-institution">Sri Lanka Institute of Advanced Technological Education
+                                    (SLIATE)</p>
+                                <p class="timeline-desc">
+                                    Specializing in Software Development, Database Systems, Network Architecture, IT
+                                    Project Management (ITPM), Enterprise Systems, and Software Quality Assurance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Norwood National College -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="glass-card timeline-card">
+                                <span class="timeline-period">2021 - 2023</span>
+                                <h4 class="timeline-title">G.C.E. Advanced Level - Engineering Technology Stream</h4>
+                                <p class="timeline-institution">Norwood National College</p>
+                                <p class="timeline-desc">
+                                    Completed Engineering Technology, Science for Technology, and Information &
+                                    Communication Technology with strong foundations in analytical problem solving.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Certifications -->
+                <div>
+                    <h3 class="timeline-column-title">
+                        <i data-lucide="shield-check" style="color:var(--accent-secondary);"></i>
+                        <span>Verified Certifications</span>
+                    </h3>
+
+                    <div class="cert-cards-grid">
+                        <div class="glass-card cert-card">
+                            <div class="cert-info">
+                                <div class="cert-icon"><i data-lucide="layout-template"></i></div>
+                                <div>
+                                    <h4 class="cert-name">Web Design for Beginners</h4>
+                                    <p class="cert-issuer">Verified E-Certificate • HTML5, CSS3, Responsive Design</p>
+                                </div>
+                            </div>
+                            <span class="tech-tag" style="color:#38bdf8;">Verified</span>
+                        </div>
+
+                        <div class="glass-card cert-card">
+                            <div class="cert-info">
+                                <div class="cert-icon"><i data-lucide="network"></i></div>
+                                <div>
+                                    <h4 class="cert-name">Cisco Networking & Routing Fundamentals</h4>
+                                    <p class="cert-issuer">Cisco Networking Academy • CCNA Concepts</p>
+                                </div>
+                            </div>
+                            <span class="tech-tag" style="color:#34d399;">Verified</span>
+                        </div>
+
+                        <div class="glass-card cert-card">
+                            <div class="cert-info">
+                                <div class="cert-icon"><i data-lucide="cpu"></i></div>
+                                <div>
+                                    <h4 class="cert-name">SAP Business AI Platform & ABAP</h4>
+                                    <p class="cert-issuer">Enterprise Architecture & ERP Workflows</p>
+                                </div>
+                            </div>
+                            <span class="tech-tag" style="color:#a855f7;">Verified</span>
+                        </div>
+
+                        <div class="glass-card cert-card">
+                            <div class="cert-info">
+                                <div class="cert-icon"><i data-lucide="code-2"></i></div>
+                                <div>
+                                    <h4 class="cert-name">Full-Stack Software Engineering Specialization</h4>
+                                    <p class="cert-issuer">Coursera & Industry Partners</p>
+                                </div>
+                            </div>
+                            <span class="tech-tag" style="color:#f59e0b;">Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION (Direct WhatsApp + Email + Form)
+       ========================================================================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <i data-lucide="message-square" style="width:14px;height:14px;"></i>
+                    Get In Touch
+                </span>
+                <h2 class="section-title">Let's Connect & <span class="gradient-text">Build Together</span></h2>
+                <p class="section-desc">
+                    Ready to collaborate on full-stack web applications, IT infrastructure setups, or ERP systems. Chat
+                    with me directly on WhatsApp or drop a message!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Direct Contact Information Cards -->
+                <div class="contact-info-cards">
+                    <!-- WhatsApp Card -->
+                    <div class="glass-card contact-card-item">
+                        <div class="contact-card-left">
+                            <div class="contact-card-icon whatsapp">
+                                <i data-lucide="phone-call"></i>
+                            </div>
+                            <div>
+                                <p class="contact-card-label">Direct WhatsApp / Phone</p>
+                                <p class="contact-card-value">+94 77 768 3147</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/94777683147?text=Hi%20Sivakumar,%20I'm%20contacting%20you%20from%20your%20portfolio!"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                            <i data-lucide="message-circle" style="width:16px;"></i>
+                            <span>Chat</span>
+                        </a>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="glass-card contact-card-item">
+                        <div class="contact-card-left">
+                            <div class="contact-card-icon email">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <p class="contact-card-label">Email Address</p>
+                                <p class="contact-card-value" style="font-size:0.95rem;">Sivakumardhanushk@gmail.com</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline btn-sm copy-btn" data-copy="Sivakumardhanushk@gmail.com"
+                            title="Copy email address">
+                            <i data-lucide="copy" style="width:16px;"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="glass-card contact-card-item">
+                        <div class="contact-card-left">
+                            <div class="contact-card-icon github">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div>
+                                <p class="contact-card-label">GitHub Profile</p>
+                                <p class="contact-card-value">github.com/sivakumardhanushka</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/sivakumardhanushka" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-sm">
+                            <i data-lucide="external-link" style="width:16px;"></i>
+                            <span>Visit</span>
+                        </a>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="glass-card contact-card-item">
+                        <div class="contact-card-left">
+                            <div class="contact-card-icon location">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <p class="contact-card-label">Current Location</p>
+                                <p class="contact-card-value">Sri Lanka (Open to Global & Remote)</p>
+                            </div>
+                        </div>
+                        <span class="tech-tag" style="color:var(--accent-emerald);">Available</span>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Contact & WhatsApp Form -->
+                <div class="glass-card contact-form-card">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Send a Direct Inquiry</h3>
+                    <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom: 1.5rem;">
+                        Choose your preferred messaging channel below to send your inquiry instantly.
+                    </p>
+
+                    <form id="portfolio-contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Your Name</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Inquiry Type / Subject</label>
+                            <select id="contact-subject" class="form-select">
+                                <option value="Full-Stack MERN Project">Full-Stack MERN Project</option>
+                                <option value="IT Infrastructure / Networking Support">IT Infrastructure / Networking
+                                    Support</option>
+                                <option value="ERP / SAP Consultation">ERP / SAP Consultation</option>
+                                <option value="Job / Internship Opportunity">Job / Internship Opportunity</option>
+                                <option value="General Collaboration">General Collaboration</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Your Message</label>
+                            <textarea id="contact-message" class="form-textarea"
+                                placeholder="Describe your project, timeline, or requirements..." required></textarea>
+                        </div>
+
+                        <div class="form-actions-row">
+                            <button type="button" id="btn-submit-whatsapp" class="btn btn-whatsapp" style="flex:1;">
+                                <i data-lucide="message-circle" style="width:18px;"></i>
+                                <span>Send via WhatsApp</span>
+                            </button>
+
+                            <button type="submit" id="btn-submit-email" class="btn btn-outline" style="flex:1;">
+                                <i data-lucide="send" style="width:18px;"></i>
+                                <span>Send via Email</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FLOATING INTERACTIVE WHATSAPP CHAT WIDGET
+       ========================================================================== -->
+    <div class="whatsapp-widget-container" id="whatsapp-widget">
+        <!-- Floating Trigger Button -->
+        <div class="whatsapp-trigger-btn" id="whatsapp-trigger" title="Chat with Sivakumar on WhatsApp">
+            <i data-lucide="message-circle"></i>
+            <div class="whatsapp-badge-pulse"></div>
+        </div>
+
+        <!-- Chat Box Popup -->
+        <div class="whatsapp-chat-popup" id="whatsapp-popup">
+            <div class="whatsapp-popup-header">
+                <div class="whatsapp-agent-info">
+                    <img src="assets/hero.png" alt="Sivakumar Dhanushka" class="whatsapp-agent-avatar">
+                    <div class="whatsapp-agent-text">
+                        <h4>Sivakumar Dhanushka</h4>
+                        <div class="whatsapp-agent-status">
+                            <span class="status-dot" style="width:6px;height:6px;"></span>
+                            <span>Typically replies in minutes</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="popup-close-btn" id="whatsapp-popup-close" aria-label="Close WhatsApp chat popup">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <div class="whatsapp-popup-body">
+                <div class="whatsapp-message-bubble">
+                    👋 <strong>Hello!</strong> How can I help you today? Feel free to pick a topic below or type your
+                    custom message to chat with me directly on WhatsApp!
+                </div>
+
+                <div class="quick-prompts-container">
+                    <button class="quick-prompt-btn"
+                        data-text="Hi Sivakumar, I have a Full-Stack MERN web application project to discuss with you.">
+                        🚀 Hire for Full-Stack MERN Project
+                    </button>
+                    <button class="quick-prompt-btn"
+                        data-text="Hi Sivakumar, I need assistance with IT Infrastructure / Server / Networking setup.">
+                        🌐 IT Infrastructure & Networking Support
+                    </button>
+                    <button class="quick-prompt-btn"
+                        data-text="Hi Sivakumar, I would like to inquire about ERP / SAP system support.">
+                        💼 ERP & SAP Support Inquiries
+                    </button>
+                    <button class="quick-prompt-btn"
+                        data-text="Hi Sivakumar, I saw your portfolio and would like to request a project quote!">
+                        💰 Request a Project Quote
+                    </button>
+                </div>
+            </div>
+
+            <div class="whatsapp-popup-footer">
+                <input type="text" id="whatsapp-quick-input" class="whatsapp-custom-input"
+                    placeholder="Type a message...">
+                <button class="btn btn-whatsapp btn-sm" id="whatsapp-send-btn" style="width:100%;">
+                    <i data-lucide="send" style="width:16px;"></i>
+                    <span>Start WhatsApp Chat (+94 77 768 3147)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       PROJECT DETAIL MODAL
+       ========================================================================== -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-body" id="modal-content">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       TOAST NOTIFICATIONS
+       ========================================================================== -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <!-- ==========================================================================
+       GLASSMORPHIC FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-card">
+                    <a href="#home" class="nav-logo">
+                        <div class="logo-badge">SD</div>
+                        <span>S.<span class="gradient-text">Dhanushka</span></span>
+                    </a>
+                    <p class="footer-bio">
+                        Full-Stack Developer (MERN) & IT Infrastructure / ERP Specialist. Building next-generation digital
+                        architectures and high-performance enterprise systems.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://github.com/sivakumardhanushka" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" title="GitHub">
+                            <i data-lucide="github" style="width:16px;height:16px;"></i>
+                        </a>
+                        <a href="https://wa.me/94777683147" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" title="WhatsApp">
+                            <i data-lucide="message-circle" style="width:16px;height:16px;color:#25d366;"></i>
+                        </a>
+                        <a href="mailto:Sivakumardhanushk@gmail.com" class="btn-icon btn-sm" title="Email">
+                            <i data-lucide="mail" style="width:16px;height:16px;color:#6366f1;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="footer-card">
+                    <h4 class="footer-heading">Quick Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home" class="footer-link"><i data-lucide="chevron-right" style="width:14px;"></i> Home</a></li>
+                        <li><a href="#about" class="footer-link"><i data-lucide="chevron-right" style="width:14px;"></i> About Expertise</a></li>
+                        <li><a href="#skills" class="footer-link"><i data-lucide="chevron-right" style="width:14px;"></i> Skills Matrix</a></li>
+                        <li><a href="#projects" class="footer-link"><i data-lucide="chevron-right" style="width:14px;"></i> Projects Showcase</a></li>
+                        <li><a href="#timeline" class="footer-link"><i data-lucide="chevron-right" style="width:14px;"></i> Education & Certs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: GitHub Repositories -->
+                <div class="footer-card">
+                    <h4 class="footer-heading">GitHub Repositories</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://github.com/sivakumardhanushka/Yoyo-Ecommerce" target="_blank"
+                                rel="noopener noreferrer" class="footer-link"><i data-lucide="folder-git-2" style="width:14px;color:var(--accent-secondary);"></i> Yoyo-Ecommerce</a></li>
+                        <li><a href="https://github.com/sivakumardhanushka/Real-Estate-website" target="_blank"
+                                rel="noopener noreferrer" class="footer-link"><i data-lucide="folder-git-2" style="width:14px;color:var(--accent-secondary);"></i> Real-Estate-website</a></li>
+                        <li><a href="https://github.com/sivakumardhanushka/Tourisum-in-Jaffna" target="_blank"
+                                rel="noopener noreferrer" class="footer-link"><i data-lucide="folder-git-2" style="width:14px;color:var(--accent-secondary);"></i> Tourisum-in-Jaffna</a></li>
+                        <li><a href="https://github.com/sivakumardhanushka/Employe-Management-system" target="_blank"
+                                rel="noopener noreferrer" class="footer-link"><i data-lucide="folder-git-2" style="width:14px;color:var(--accent-secondary);"></i> Employe-Management</a></li>
+                        <li><a href="https://github.com/sivakumardhanushka/Scientific-Calculator" target="_blank"
+                                rel="noopener noreferrer" class="footer-link"><i data-lucide="folder-git-2" style="width:14px;color:var(--accent-secondary);"></i> Scientific-Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Direct Contact -->
+                <div class="footer-card">
+                    <h4 class="footer-heading">Direct Contact</h4>
+                    <ul class="footer-links-list">
+                        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--text-secondary);font-size:0.875rem;">
+                            <i data-lucide="phone" style="width:16px;color:var(--accent-whatsapp);flex-shrink:0;"></i>
+                            <span>+94 77 768 3147</span>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--text-secondary);font-size:0.875rem;">
+                            <i data-lucide="mail" style="width:16px;color:var(--accent-primary);flex-shrink:0;"></i>
+                            <span style="word-break:break-all;">Sivakumardhanushk@gmail.com</span>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--text-secondary);font-size:0.875rem;">
+                            <i data-lucide="map-pin" style="width:16px;color:var(--accent-amber);flex-shrink:0;"></i>
+                            <span>Sri Lanka</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top:1.25rem;">
+                        <a href="https://wa.me/94777683147?text=Hi%20Sivakumar!" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="width:100%;">
+                            <i data-lucide="message-circle" style="width:16px;"></i>
+                            <span>WhatsApp Chat</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glassmorphic Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sivakumar Dhanushka. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="https://github.com/sivakumardhanushka" target="_blank" rel="noopener noreferrer"
+                        class="footer-link">GitHub</a>
+                    <span>•</span>
+                    <a href="https://wa.me/94777683147" target="_blank" rel="noopener noreferrer"
+                        class="footer-link">WhatsApp</a>
+                    <span>•</span>
+                    <a href="mailto:Sivakumardhanushk@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Interactive Logic Script -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
